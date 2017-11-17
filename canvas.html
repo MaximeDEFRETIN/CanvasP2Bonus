@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bonus</title>
+</head>
+<body>
+  <canvas id="canvas" width="2000" height="500"></canvas>
+  <script type="text/javascript">
+  var canvas = document.getElementById('canvas');
+  var m =  canvas.getContext("2d");
+  //E
+  m.beginPath();
+  m.moveTo(200,150);
+  m.lineTo(100,150);
+  m.lineTo(100,350);
+  m.lineTo(200,350);
+  m.moveTo(200,250);
+  m.lineTo(100,250);
+  m.strokeStyle = "black";
+  m.lineWidth = "5";
+  m.lineJoin = "bevel";
+  m.lineCap = "round";
+  m.closePath();
+  m.stroke();
+
+  //2
+  m.beginPath();
+  m.strokeStyle = "red";
+  m.lineCap = "round";
+  m.moveTo(210,150);
+  m.quadraticCurveTo(375,50,170,420);
+  m.stroke();
+  m.beginPath();
+  m.lineCap = "round";
+  m.moveTo(170,420);
+  m.lineTo(260,390);
+  m.closePath();
+  m.stroke();
+
+  //N
+  m.beginPath();
+  m.strokeStyle = "black";
+  m.lineWidth = "5";
+  m.lineJoin = "bevel";
+  m.lineCap = "round";
+  m.moveTo(300,350);
+  m.lineTo(300,150);
+  m.lineTo(450,350);
+  m.lineTo(450,150);
+  m.stroke();
+
+  //Texte
+  m.beginPath();
+  m.font = "30px Times New Roman";
+  m.strokeText("École du Numérique Noyonnais",250,460);
+  </script>
+</body>
+</html>
